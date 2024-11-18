@@ -1,7 +1,7 @@
 import React from 'react';
 import { Play, Flame } from 'lucide-react';
 
-export default function VideoButton() {
+const VideoButton: React.FC = () => {
   return (
     <div className="flex flex-col items-center">
       <button className="group flex items-center gap-3 bg-gray-900/80 hover:bg-gray-900 backdrop-blur-sm px-6 py-3 rounded-xl border border-yellow-400/20 mt-8 transition-all">
@@ -23,4 +23,6 @@ export default function VideoButton() {
       </div>
     </div>
   );
-}
+};
+
+export default VideoButton;

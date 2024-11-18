@@ -4,6 +4,7 @@ import PricingCard from './components/PricingCard';
 import CountdownTimer from './components/CountdownTimer';
 import VideoButton from './components/VideoButton';
 import ToolCard from './components/ToolCard';
+import MatrixText from './components/MatrixText';
 
 function App() {
   return (
@@ -117,6 +118,8 @@ function App() {
               "Unlimited usage"
             ]}
             ctaText="Claim 50% Off Now"
+            couponCode="BLACK50"
+            purchaseLink="https://buy.stripe.com/28obKxevA5pF5i0bIO"
           />
           
           <PricingCard
@@ -133,6 +136,8 @@ function App() {
             ]}
             isPopular={true}
             ctaText="Get Maximum Savings"
+            couponCode="BLACK25"
+            purchaseLink="https://buy.stripe.com/3csg0N5Z42dt9ygaEQ"
           />
           
           <PricingCard
@@ -148,6 +153,8 @@ function App() {
               "Referral rewards program"
             ]}
             ctaText="Upgrade & Save"
+            couponCode="THANKYOU35"
+            purchaseLink="https://buy.stripe.com/3csg0N5Z42dt9ygaEQ"
           />
         </div>
       </div>
@@ -182,6 +189,11 @@ function App() {
           </div>
         </div>
       </div>
+
+      {/* Matrix Footer */}
+      <footer className="border-t border-gray-800">
+        <MatrixText />
+      </footer>
     </div>
   );
 }

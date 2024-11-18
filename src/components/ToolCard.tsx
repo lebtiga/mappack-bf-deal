@@ -7,7 +7,7 @@ interface ToolCardProps {
   description: string;
 }
 
-export default function ToolCard({ icon: Icon, title, description }: ToolCardProps) {
+const ToolCard: React.FC<ToolCardProps> = ({ icon: Icon, title, description }) => {
   return (
     <div className="feature-card p-8 rounded-2xl card-shine">
       <div className="text-yellow-400 mb-6">
@@ -17,4 +17,6 @@ export default function ToolCard({ icon: Icon, title, description }: ToolCardPro
       <p className="text-gray-400">{description}</p>
     </div>
   );
-}
+};
+
+export default ToolCard;
