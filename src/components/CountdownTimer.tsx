@@ -35,35 +35,35 @@ const CountdownTimer: React.FC = () => {
   }, []);
 
   return (
-    <div className="inline-flex items-center gap-6 bg-gray-900/80 backdrop-blur-sm px-8 py-4 rounded-2xl border border-yellow-400/20">
-      <Clock className="w-8 h-8 text-yellow-400" />
-      <div className="flex gap-6">
+    <div className="inline-flex flex-col sm:flex-row items-center gap-4 sm:gap-6 bg-gray-900/80 backdrop-blur-sm px-4 sm:px-8 py-4 rounded-2xl border border-yellow-400/20">
+      <Clock className="w-6 h-6 sm:w-8 sm:h-8 text-yellow-400" />
+      <div className="flex gap-3 sm:gap-6">
         <div className="text-center">
-          <span className="text-4xl font-bold text-yellow-400">
+          <span className="text-2xl sm:text-4xl font-bold text-yellow-400">
             {String(timeLeft.days).padStart(2, '0')}
           </span>
-          <p className="text-xs uppercase tracking-wider text-gray-400 mt-1">Days</p>
+          <p className="text-[10px] sm:text-xs uppercase tracking-wider text-gray-400 mt-1">Days</p>
         </div>
-        <span className="text-2xl text-yellow-400">:</span>
+        <span className="text-xl sm:text-2xl text-yellow-400 self-start">:</span>
         <div className="text-center">
-          <span className="text-4xl font-bold text-yellow-400">
+          <span className="text-2xl sm:text-4xl font-bold text-yellow-400">
             {String(timeLeft.hours).padStart(2, '0')}
           </span>
-          <p className="text-xs uppercase tracking-wider text-gray-400 mt-1">Hours</p>
+          <p className="text-[10px] sm:text-xs uppercase tracking-wider text-gray-400 mt-1">Hours</p>
         </div>
-        <span className="text-2xl text-yellow-400">:</span>
+        <span className="text-xl sm:text-2xl text-yellow-400 self-start">:</span>
         <div className="text-center">
-          <span className="text-4xl font-bold text-yellow-400">
+          <span className="text-2xl sm:text-4xl font-bold text-yellow-400">
             {String(timeLeft.minutes).padStart(2, '0')}
           </span>
-          <p className="text-xs uppercase tracking-wider text-gray-400 mt-1">Minutes</p>
+          <p className="text-[10px] sm:text-xs uppercase tracking-wider text-gray-400 mt-1">Minutes</p>
         </div>
-        <span className="text-2xl text-yellow-400">:</span>
+        <span className="text-xl sm:text-2xl text-yellow-400 self-start">:</span>
         <div className="text-center">
-          <span className="text-4xl font-bold text-yellow-400">
+          <span className="text-2xl sm:text-4xl font-bold text-yellow-400">
             {String(timeLeft.seconds).padStart(2, '0')}
           </span>
-          <p className="text-xs uppercase tracking-wider text-gray-400 mt-1">Seconds</p>
+          <p className="text-[10px] sm:text-xs uppercase tracking-wider text-gray-400 mt-1">Seconds</p>
         </div>
       </div>
     </div>
