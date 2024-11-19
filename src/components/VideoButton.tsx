@@ -1,4 +1,4 @@
-\import React, { useState } from 'react';
+import React, { useState } from 'react';
 import { Play, Flame } from 'lucide-react';
 import VideoModal from './VideoModal';
 
