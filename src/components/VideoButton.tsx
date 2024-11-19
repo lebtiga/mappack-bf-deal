@@ -1,10 +1,16 @@
-import React from 'react';
+\import React, { useState } from 'react';
 import { Play, Flame } from 'lucide-react';
+import VideoModal from './VideoModal';
 
 const VideoButton: React.FC = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <div className="flex flex-col items-center">
-      <button className="group flex items-center gap-3 bg-gray-900/80 hover:bg-gray-900 backdrop-blur-sm px-6 py-3 rounded-xl border border-yellow-400/20 mt-8 transition-all">
+      <button
+        onClick={() => setIsModalOpen(true)}
+        className="group flex items-center gap-3 bg-gray-900/80 hover:bg-gray-900 backdrop-blur-sm px-6 py-3 rounded-xl border border-yellow-400/20 mt-8 transition-all"
+      >
         <div className="w-12 h-12 rounded-full bg-yellow-400/10 flex items-center justify-center group-hover:bg-yellow-400/20 transition-all">
           <Play className="w-6 h-6 text-yellow-400 fill-yellow-400" />
         </div>
@@ -21,6 +27,12 @@ const VideoButton: React.FC = () => {
           Join now before all spots are filled - don't miss out on this exclusive opportunity!
         </p>
       </div>
+
+      <VideoModal 
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        videoId="ouCKvrm0CTg"
+      />
     </div>
   );
 };
