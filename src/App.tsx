@@ -64,32 +64,26 @@ function App() {
           <ToolCard
             icon={ScrollText}
             title="Auto Schema"
-            description="Stand out in the digital noise. AutoSchema creates a perfectly tuned digital billboard for your business"
           />
           <ToolCard
             icon={CircleDot}
             title="GeoCircleKML"
-            description="Stand out in the digital noise. AutoSchema creates a perfectly tuned digital billboard for your business"
           />
           <ToolCard
             icon={Rocket}
             title="EntityRank AI"
-            description="Stand out in the digital noise. AutoSchema creates a perfectly tuned digital billboard for your business"
           />
           <ToolCard
             icon={Mail}
             title="EmailSnatch"
-            description="Stand out in the digital noise. AutoSchema creates a perfectly tuned digital billboard for your business"
           />
           <ToolCard
             icon={Search}
             title="LocalOnpage Analyzer"
-            description="Stand out in the digital noise. AutoSchema creates a perfectly tuned digital billboard for your business"
           />
           <ToolCard
             icon={Magnet}
             title="MapMagnet"
-            description="Stand out in the digital noise. AutoSchema creates a perfectly tuned digital billboard for your business"
           />
         </div>
       </div>
